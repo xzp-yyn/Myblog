@@ -4,8 +4,7 @@
 我的博客
 
 #### 软件架构
-软件架构说明
-
+博客使用到的技术架构：springboot,mysql,maven,mybatis框架前端：thymeleaf
 
 #### 安装教程
 
