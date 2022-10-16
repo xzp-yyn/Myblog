@@ -30,4 +30,4 @@ mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 test:
-  name: this is ok
+  name: "shell真难搞啊，烦死了"
