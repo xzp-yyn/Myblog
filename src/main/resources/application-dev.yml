@@ -1,0 +1,31 @@
+server:
+  port: 8081
+spring:
+  thymeleaf:
+    mode: HTML
+  datasource:
+    username: root
+    password: 201014
+    url: jdbc:mysql://192.168.137.1:3306/blog?characterEncoding=utf-8&serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      filters: stat,wall
+      stat-view-servlet:
+        enabled: true
+        login-username: xzp
+        login-password: 201014
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    static-path-pattern: classpath:/static/**
+logging:
+  level:
+    root: info
+    com.xzp: debug
+  file: log/blog-dev.log
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

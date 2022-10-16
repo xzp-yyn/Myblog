@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xzp.dao.PictureDao">
+    <select id="getAllPicture" resultType="com.xzp.entity.Picture">
+        select * from t_picture
+    </select>
+    <insert id="insertPicture" keyColumn="id" useGeneratedKeys="true" parameterType="com.xzp.entity.Picture">
+        insert into t_picture values(#{id},#{pictureaddress},#{picturedescription},#{picturename},#{picturetime})
+    </insert>
+    <select id="selectPicture" parameterType="Long" resultType="com.xzp.entity.Picture">
+        SELECT * from t_picture where id=#{id}
+    </select>
+
+<!-- trim 可以实现部分字段更新   -->
+    <update id="updatePicture" parameterType="com.xzp.entity.Picture" useGeneratedKeys="true" keyProperty="id">
+        update t_picture
+        <trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
+            <if test="picturename !=null and picturename.length()>0">picturename=#{picturename},</if>
+            <if test="pictureaddress !=null and pictureaddress.length()>0">pictureaddress=#{pictureaddress},</if>
+            <if test="picturetime !=null and picturetime.length()>0">picturetime=#{picturetime},</if>
+            <if test="picturedescription !=null and picturedescription.length()>0">picturedescription=#{picturedescription}</if>
+        </trim>
+    </update>
+
+    <delete id="deletePicture">
+        delete from t_picture where id=#{id}
+    </delete>
+</mapper>

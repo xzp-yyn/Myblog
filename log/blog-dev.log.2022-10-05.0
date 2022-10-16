@@ -1,0 +1,645 @@
+2022-10-05 19:13:17.891  INFO 19444 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 19444 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2022-10-05 19:13:17.915 DEBUG 19444 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2022-10-05 19:13:17.917  INFO 19444 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2022-10-05 19:13:17.988  INFO 19444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-05 19:13:17.989  INFO 19444 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-05 19:13:18.713  WARN 19444 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:13:18.714  WARN 19444 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:13:18.714  WARN 19444 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:13:18.714  WARN 19444 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:13:18.715  WARN 19444 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:13:18.715  WARN 19444 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2022-10-05 19:13:19.269  INFO 19444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-05 19:13:19.286  INFO 19444 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-05 19:13:19.287  INFO 19444 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2022-10-05 19:13:19.295  INFO 19444 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\xuniji1\linux\bin\;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;.]
+2022-10-05 19:13:19.390  INFO 19444 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-05 19:13:19.390  INFO 19444 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1401 ms
+2022-10-05 19:13:19.422  INFO 19444 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2022-10-05 19:13:19.424  INFO 19444 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2022-10-05 19:13:19.427  INFO 19444 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-10-05 19:13:19.428  INFO 19444 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2022-10-05 19:13:19.526  INFO 19444 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-05 19:13:19.648  INFO 19444 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-05 19:13:20.250  INFO 19444 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 19:13:20.297  INFO 19444 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-05 19:13:20.301  INFO 19444 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 3.101 seconds (JVM running for 4.116)
+2022-10-05 19:14:21.091  INFO 12064 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 12064 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2022-10-05 19:14:21.117 DEBUG 12064 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2022-10-05 19:14:21.118  INFO 12064 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2022-10-05 19:14:21.306  INFO 12064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-05 19:14:21.307  INFO 12064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-05 19:14:22.267  WARN 12064 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:14:22.267  WARN 12064 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:14:22.267  WARN 12064 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:14:22.268  WARN 12064 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:14:22.268  WARN 12064 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:14:22.268  WARN 12064 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2022-10-05 19:14:22.646  INFO 12064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-05 19:14:22.660  INFO 12064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-05 19:14:22.661  INFO 12064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2022-10-05 19:14:22.667  INFO 12064 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\xuniji1\linux\bin\;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;.]
+2022-10-05 19:14:22.736  INFO 12064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-05 19:14:22.736  INFO 12064 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1429 ms
+2022-10-05 19:14:22.764  INFO 12064 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2022-10-05 19:14:22.765  INFO 12064 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2022-10-05 19:14:22.769  INFO 12064 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-10-05 19:14:22.769  INFO 12064 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2022-10-05 19:14:22.843  INFO 12064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-05 19:14:22.948  INFO 12064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-05 19:14:23.466  INFO 12064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 19:14:23.505  INFO 12064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-05 19:14:23.507  INFO 12064 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 3.159 seconds (JVM running for 4.295)
+2022-10-05 19:14:55.857  INFO 12064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-05 19:14:55.857  INFO 12064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-05 19:14:55.862  INFO 12064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-10-05 19:15:44.027  INFO 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 19360 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2022-10-05 19:15:44.029 DEBUG 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2022-10-05 19:15:44.030  INFO 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2022-10-05 19:15:44.074  INFO 19360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-05 19:15:44.074  INFO 19360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-05 19:15:44.551  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:15:44.551  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:15:44.551  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:15:44.551  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:15:44.551  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:15:44.551  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2022-10-05 19:15:44.880  INFO 19360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-05 19:15:44.892  INFO 19360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-05 19:15:44.892  INFO 19360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2022-10-05 19:15:44.897  INFO 19360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\xuniji1\linux\bin\;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;.]
+2022-10-05 19:15:44.954  INFO 19360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-05 19:15:44.954  INFO 19360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 880 ms
+2022-10-05 19:15:44.976  INFO 19360 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2022-10-05 19:15:44.977  INFO 19360 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2022-10-05 19:15:44.979  INFO 19360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-10-05 19:15:44.980  INFO 19360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2022-10-05 19:15:45.040  INFO 19360 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-05 19:15:45.119  INFO 19360 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-05 19:15:45.610  INFO 19360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 19:15:45.651  INFO 19360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-05 19:15:45.656  INFO 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.095 seconds (JVM running for 2.962)
+2022-10-05 19:16:01.689  INFO 19360 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-05 19:16:01.690  INFO 19360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-05 19:16:01.696  INFO 19360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-10-05 19:16:01.873  WARN 19360 --- [http-nio-8081-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [157] milliseconds.
+2022-10-05 19:17:31.296 ERROR 19360 --- [http-nio-8081-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 206, line 2, column 29, token WHERE : select b.id bid,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+### The error may exist in file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]
+### The error may involve com.xzp.dao.BlogDao.detailBlog
+### The error occurred while executing a query
+### SQL: select b.id bid,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename     from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+### Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 206, line 2, column 29, token WHERE : select b.id bid,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: ERROR. pos 206, line 2, column 29, token WHERE : select b.id bid,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?; nested exception is java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 206, line 2, column 29, token WHERE : select b.id bid,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?] with root cause
+
+com.alibaba.druid.sql.parser.ParserException: ERROR. pos 206, line 2, column 29, token WHERE
+	at com.alibaba.druid.sql.parser.SQLExprParser.primary(SQLExprParser.java:866)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(MySqlExprParser.java:198)
+	at com.alibaba.druid.sql.parser.SQLExprParser.expr(SQLExprParser.java:154)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.expr(SQLSelectParser.java:1009)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:917)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:992)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:826)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSource(MySqlSelectParser.java:281)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseFrom(MySqlSelectParser.java:89)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(MySqlSelectParser.java:193)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.query(SQLSelectParser.java:236)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.select(SQLSelectParser.java:88)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(MySqlStatementParser.java:284)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:248)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:182)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:793)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:259)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:930)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:341)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy92.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy91.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor102.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy67.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy68.detailBlog(Unknown Source)
+	at com.xzp.service.impl.BlogServiceImpl.detailBlog(BlogServiceImpl.java:124)
+	at com.xzp.controller.BlogController.detailBlog(BlogController.java:153)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-10-05 19:20:02.101  INFO 19360 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-10-05 19:20:02.116  INFO 19360 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-10-05 19:20:02.550  INFO 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 19360 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2022-10-05 19:20:02.551 DEBUG 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2022-10-05 19:20:02.552  INFO 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2022-10-05 19:20:02.801  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:20:02.801  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:20:02.801  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:20:02.801  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:20:02.802  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:20:02.802  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2022-10-05 19:20:02.866  INFO 19360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-05 19:20:02.867  INFO 19360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-05 19:20:02.867  INFO 19360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2022-10-05 19:20:02.889  INFO 19360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-05 19:20:02.890  INFO 19360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 336 ms
+2022-10-05 19:20:02.904  INFO 19360 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2022-10-05 19:20:02.904  INFO 19360 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2022-10-05 19:20:02.905  INFO 19360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-10-05 19:20:02.905  INFO 19360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2022-10-05 19:20:02.933  INFO 19360 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-05 19:20:02.955  INFO 19360 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2022-10-05 19:20:03.216  INFO 19360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 19:20:03.234  INFO 19360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-05 19:20:03.235  INFO 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 0.714 seconds (JVM running for 260.541)
+2022-10-05 19:20:03.236  INFO 19360 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-05 19:20:09.418  INFO 19360 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-05 19:20:09.419  INFO 19360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-05 19:20:09.421  INFO 19360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-10-05 19:20:10.567 ERROR 19360 --- [http-nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 202, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+### The error may exist in file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]
+### The error may involve com.xzp.dao.BlogDao.detailBlog
+### The error occurred while executing a query
+### SQL: select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename     from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+### Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 202, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: ERROR. pos 202, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?; nested exception is java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 202, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?] with root cause
+
+com.alibaba.druid.sql.parser.ParserException: ERROR. pos 202, line 2, column 29, token WHERE
+	at com.alibaba.druid.sql.parser.SQLExprParser.primary(SQLExprParser.java:866)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(MySqlExprParser.java:198)
+	at com.alibaba.druid.sql.parser.SQLExprParser.expr(SQLExprParser.java:154)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.expr(SQLSelectParser.java:1009)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:917)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:992)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:826)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSource(MySqlSelectParser.java:281)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseFrom(MySqlSelectParser.java:89)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(MySqlSelectParser.java:193)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.query(SQLSelectParser.java:236)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.select(SQLSelectParser.java:88)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(MySqlStatementParser.java:284)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:248)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:182)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:793)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:259)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:930)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:341)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy92.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy91.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor102.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy67.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy98.detailBlog(Unknown Source)
+	at com.xzp.service.impl.BlogServiceImpl.detailBlog(BlogServiceImpl.java:124)
+	at com.xzp.controller.BlogController.detailBlog(BlogController.java:153)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-10-05 19:20:17.551 ERROR 19360 --- [http-nio-8081-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 202, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+### The error may exist in file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]
+### The error may involve com.xzp.dao.BlogDao.detailBlog
+### The error occurred while executing a query
+### SQL: select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename     from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+### Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 202, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: ERROR. pos 202, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?; nested exception is java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 202, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?] with root cause
+
+com.alibaba.druid.sql.parser.ParserException: ERROR. pos 202, line 2, column 29, token WHERE
+	at com.alibaba.druid.sql.parser.SQLExprParser.primary(SQLExprParser.java:866)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(MySqlExprParser.java:198)
+	at com.alibaba.druid.sql.parser.SQLExprParser.expr(SQLExprParser.java:154)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.expr(SQLSelectParser.java:1009)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:917)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:992)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:826)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSource(MySqlSelectParser.java:281)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseFrom(MySqlSelectParser.java:89)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(MySqlSelectParser.java:193)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.query(SQLSelectParser.java:236)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.select(SQLSelectParser.java:88)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(MySqlStatementParser.java:284)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:248)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:182)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:793)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:259)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:930)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:341)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy92.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy91.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor102.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy67.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy98.detailBlog(Unknown Source)
+	at com.xzp.service.impl.BlogServiceImpl.detailBlog(BlogServiceImpl.java:124)
+	at com.xzp.controller.BlogController.detailBlog(BlogController.java:153)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-10-05 19:24:05.719  INFO 19360 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2022-10-05 19:24:05.723  INFO 19360 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2022-10-05 19:24:06.034  INFO 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 19360 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2022-10-05 19:24:06.034 DEBUG 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2022-10-05 19:24:06.034  INFO 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2022-10-05 19:24:06.273  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:24:06.274  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:24:06.274  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:24:06.274  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:24:06.274  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:24:06.274  WARN 19360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2022-10-05 19:24:06.330  INFO 19360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-05 19:24:06.331  INFO 19360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-05 19:24:06.331  INFO 19360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2022-10-05 19:24:06.352  INFO 19360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-05 19:24:06.352  INFO 19360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 316 ms
+2022-10-05 19:24:06.362  INFO 19360 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2022-10-05 19:24:06.363  INFO 19360 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2022-10-05 19:24:06.363  INFO 19360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-10-05 19:24:06.364  INFO 19360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2022-10-05 19:24:06.389  INFO 19360 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-05 19:24:06.419  INFO 19360 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2022-10-05 19:24:06.640  INFO 19360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 19:24:06.655  INFO 19360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-05 19:24:06.656  INFO 19360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 0.648 seconds (JVM running for 503.962)
+2022-10-05 19:24:06.657  INFO 19360 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-10-05 19:24:25.896  INFO 19360 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-05 19:24:25.898  INFO 19360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-05 19:24:25.903  INFO 19360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-10-05 19:24:25.936 ERROR 19360 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.UncategorizedSQLException: 
+### Error querying database.  Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 204, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,b.typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+### The error may exist in file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]
+### The error may involve com.xzp.dao.BlogDao.detailBlog
+### The error occurred while executing a query
+### SQL: select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,b.typename     from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+### Cause: java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 204, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,b.typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?
+; uncategorized SQLException; SQL state [null]; error code [0]; sql injection violation, syntax error: ERROR. pos 204, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,b.typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?; nested exception is java.sql.SQLException: sql injection violation, syntax error: ERROR. pos 204, line 2, column 29, token WHERE : select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,b.typename
+    from t_blog b,t_user u, where b.user_id = u.id and b.id = ?] with root cause
+
+com.alibaba.druid.sql.parser.ParserException: ERROR. pos 204, line 2, column 29, token WHERE
+	at com.alibaba.druid.sql.parser.SQLExprParser.primary(SQLExprParser.java:866)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlExprParser.primary(MySqlExprParser.java:198)
+	at com.alibaba.druid.sql.parser.SQLExprParser.expr(SQLExprParser.java:154)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.expr(SQLSelectParser.java:1009)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:917)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:992)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.parseTableSourceRest(SQLSelectParser.java:826)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSourceRest(MySqlSelectParser.java:476)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseTableSource(MySqlSelectParser.java:281)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.parseFrom(MySqlSelectParser.java:89)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlSelectParser.query(MySqlSelectParser.java:193)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.query(SQLSelectParser.java:236)
+	at com.alibaba.druid.sql.parser.SQLSelectParser.select(SQLSelectParser.java:88)
+	at com.alibaba.druid.sql.dialect.mysql.parser.MySqlStatementParser.parseSelect(MySqlStatementParser.java:284)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:248)
+	at com.alibaba.druid.sql.parser.SQLStatementParser.parseStatementList(SQLStatementParser.java:182)
+	at com.alibaba.druid.wall.WallProvider.checkInternal(WallProvider.java:624)
+	at com.alibaba.druid.wall.WallProvider.check(WallProvider.java:578)
+	at com.alibaba.druid.wall.WallFilter.checkInternal(WallFilter.java:793)
+	at com.alibaba.druid.wall.WallFilter.connection_prepareStatement(WallFilter.java:259)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.filter.FilterAdapter.connection_prepareStatement(FilterAdapter.java:930)
+	at com.alibaba.druid.filter.FilterEventAdapter.connection_prepareStatement(FilterEventAdapter.java:122)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_prepareStatement(FilterChainImpl.java:568)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.prepareStatement(ConnectionProxyImpl.java:341)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:349)
+	at jdk.internal.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.ibatis.logging.jdbc.ConnectionLogger.invoke(ConnectionLogger.java:55)
+	at com.sun.proxy.$Proxy92.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:108)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy91.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at jdk.internal.reflect.GeneratedMethodAccessor102.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy67.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy105.detailBlog(Unknown Source)
+	at com.xzp.service.impl.BlogServiceImpl.detailBlog(BlogServiceImpl.java:124)
+	at com.xzp.controller.BlogController.detailBlog(BlogController.java:153)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2022-10-05 19:31:19.148  INFO 21360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 21360 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2022-10-05 19:31:19.151 DEBUG 21360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2022-10-05 19:31:19.152  INFO 21360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2022-10-05 19:31:19.197  INFO 21360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-05 19:31:19.197  INFO 21360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-05 19:31:19.785  WARN 21360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:31:19.785  WARN 21360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:31:19.785  WARN 21360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:31:19.785  WARN 21360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:31:19.785  WARN 21360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2022-10-05 19:31:19.786  WARN 21360 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2022-10-05 19:31:20.128  INFO 21360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-10-05 19:31:20.140  INFO 21360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-05 19:31:20.140  INFO 21360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2022-10-05 19:31:20.145  INFO 21360 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\xuniji1\linux\bin\;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;.]
+2022-10-05 19:31:20.205  INFO 21360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-05 19:31:20.205  INFO 21360 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1008 ms
+2022-10-05 19:31:20.226  INFO 21360 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2022-10-05 19:31:20.227  INFO 21360 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2022-10-05 19:31:20.230  INFO 21360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-10-05 19:31:20.230  INFO 21360 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2022-10-05 19:31:20.300  INFO 21360 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-10-05 19:31:20.374  INFO 21360 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-10-05 19:31:20.795  INFO 21360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-05 19:31:20.835  INFO 21360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-10-05 19:31:20.838  INFO 21360 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.049 seconds (JVM running for 3.018)
+2022-10-05 19:31:24.415  INFO 21360 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-05 19:31:24.416  INFO 21360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-05 19:31:24.420  INFO 21360 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-10-05 19:31:24.585  WARN 21360 --- [http-nio-8081-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [148] milliseconds.

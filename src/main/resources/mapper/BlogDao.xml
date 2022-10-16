@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xzp.dao.BlogDao">
+<insert id="insert" parameterType="com.xzp.entity.Blog">
+    insert into t_blog (id,title, content, first_picture, flag,
+    views, comment_count, appreciation, share_statement, commentabled, published,
+    recommend, create_time, update_time, type_id, user_id, description,typename)
+    values (#{id},#{title},#{content},#{firstPicture},#{flag},#{views},#{commentCount},#{appreciation},
+    #{shareStatement},#{commentabled},#{published},#{recommend},#{createTime},
+    #{updateTime},#{typeId},#{userId},#{description},#{typename});
+</insert>
+<resultMap id="blog" type="com.xzp.query.BlogQuery">
+    <id property="id" column="id"/>
+    <result property="title" column="title"/>
+    <result property="updateTime" column="update_time"/>
+    <result property="recommend" column="recommend"/>
+    <result property="published" column="published"/>
+    <result property="typename" column="typename"/>
+    <result property="typeId" column="type_id"/>
+<!--    association属性：用于一对一和多对一的关系，把Type实体映射从association元素中提取出来，用一个resultMap元素表示-->
+<!--    <association property="type" javaType="com.xzp.entity.Type">-->
+<!--        <id property="id" column="id"/>-->
+<!--        <result property="name" column="name"/>-->
+<!--    </association>-->
+</resultMap>
+<!--    多表外链接查询语句   left outer join左连接
+select+查询列名
+from+表1
+left/right　(out) join +表2
+on 表2的列=表1的列-->
+    <select id="getallBlogQuery" resultMap="blog">
+        select b.id,b.title,b.update_time,b.recommend,b.published,b.typename,b.type_id,t.id,t.name
+        from t_blog b left outer join t_type t on b.type_id=t.id order by b.update_time desc
+    </select>
+
+    <delete id="deleteById" parameterType="Long">
+        delete from t_blog  where id=#{id}
+    </delete>
+    <select id="findAllByTitle" parameterType="com.xzp.query.SearchBlogQuery" resultType="com.xzp.query.BlogQuery">
+       <bind name="pattern" value="'%'+title+'%'"/>
+        select b.id,b.flag,b.title,b.content,b.type_id as typeId,b.first_picture as firstPicture,b.description,b.recommend,b.typename,b.published
+        ,b.share_statement,b.appreciation,b.commentabled,b.update_time from t_blog b
+        <where>
+            <if test="typeId!=null">
+                and b.type_id=#{typeId}
+            </if>
+            <if test="title!=null">
+                and b.title like #{pattern}
+            </if>
+        </where>
+     </select>
+
+    <update id="updateBlog" parameterType="com.xzp.query.ShowBlog" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        update t_blog set published=#{published},flag=#{flag},title=#{title},content=#{content},type_id=#{typeId},
+        first_picture=#{firstPicture},description=#{description},recommend=#{recommend},share_statement=#{shareStatement},
+        appreciation=#{appreciation},commentabled=#{commentabled},update_time=#{updateTime} where id=#{id};
+    </update>
+
+    <select id="selectByid" resultType="com.xzp.query.ShowBlog">
+        select b.id,b.flag,b.title,b.content,b.type_id as typeId,b.first_picture as firstPicture,b.description,b.recommend,b.typename,b.published
+         ,b.share_statement,b.appreciation,b.commentabled from t_blog b where b.id=#{id};
+    </select>
+
+    <select id="findByRecommend" resultType="com.xzp.entity.Blog">
+        select id,flag,title,content,type_id as typeId,first_picture as firstPicture,description,recommend,typename,published
+         ,share_statement,appreciation,commentabled from t_blog where published=1 and recommend=1 order by update_time desc limit 4
+    </select>
+
+    <select id="currentlyBlog" resultType="com.xzp.entity.Blog">
+        select  id,flag,title,content,type_id as typeId,first_picture as firstPicture,description,recommend,typename,published
+         ,share_statement,appreciation,commentabled,views,comment_count as commentCount,update_time as updateTime from t_blog order by update_time desc limit 1
+    </select>
+
+    <select id="getViewTotal" resultType="integer">
+        select coalesce (sum(views),0) from t_blog
+    </select>
+
+    <select id="getCommentTotal" resultType="integer">
+        select count(*) from t_comment
+    </select>
+
+    <select id="getMessageTotal" resultType="integer">
+         select count(*) from t_message
+    </select>
+
+    <resultMap id="indexBlog" type="com.xzp.query.IndexBlog">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="firstPicture" column="first_picture"/>
+        <result property="views" column="views"/>
+        <result property="commentCount" column="comment_count"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="description" column="description"/>
+        <result property="typeName" column="name"/>
+        <result property="nickname" column="nickname"/>
+        <result property="avatar" column="avatar"/>
+    </resultMap>
+
+    <select id="searchBlog" resultMap="indexBlog" parameterType="string">
+        <bind name="pattern" value="'%' + query + '%'" />
+        select b.id,b.title,b.first_picture, b.views,b.comment_count,b.update_time,b.description,
+        t.name , u.nickname, u.avatar from t_blog b, t_type t,t_user u
+        where b.type_id = t.id and  u.id = b.user_id and (b.title like #{pattern} or b.content like  #{pattern})
+        order by b.update_time desc
+    </select>
+
+    <resultMap id="detailblog" type="com.xzp.entity.DetailBlog">
+        <result property="id" column="id" />
+        <result property="title" column="title"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="commentabled" column="commentabled"/>
+        <result property="content" column="content"/>
+        <result property="appreciation" column="appreciation"/>
+        <result property="shareStatement" column="share_statement"/>
+        <result property="firstPicture" column="first_picture"/>
+        <result property="flag" column="flag"/>
+        <result property="avatar" column="avatar"/>
+        <result property="commentCount" column="comment_count"/>
+        <result property="nickname" column="nickname"/>
+        <result property="typeName" column="typename"/>
+        <result property="views" column="views"/>
+    </resultMap>
+
+    <select id="detailBlog" resultMap="detailblog">
+    select b.id,b.first_picture,b.flag,b.title,b.content,b.views,b.comment_count,b.update_time,b.commentabled,b.share_statement,b.appreciation, u.nickname,u.avatar,b.typename
+    from t_blog b,t_user u where b.user_id = u.id and b.id = #{id}
+    </select>
+
+    <update id="updateView" parameterType="long">
+        update t_blog set views=views+1 where id=#{id}
+    </update>
+
+    <update id="getCommentCountById" parameterType="com.xzp.entity.Blog">
+    update t_blog b set b.comment_count = (
+    select count(*) from t_comment c where c.blog_id = #{id} and b.id = #{id}
+    ) WHERE b.id = #{id}
+    </update>
+
+    <select id="getByTypeId" resultMap="indexBlog">
+         select b.id,b.title,b.first_picture, b.views, b.comment_count, b.update_time, b.description,t.name ,u.nickname, u.avatar
+        from t_blog b, t_type t,t_user u
+        where b.type_id = t.id and u.id = b.user_id and b.type_id = #{typeid} order by b.update_time desc
+    </select>
+
+    <select id="getTimeShaftBlog" resultType="com.xzp.query.TimeShaftBlog">
+        select id,title,create_time as createTime from t_blog where published=1
+    </select>
+
+</mapper>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONESTAR-关于我</title>
+    <link href="../static/images/me.jpg" th:href="@{/images/me.jpg}" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<style>
+    #nav{
+        display: none;
+    }
+</style>
+<body>
+
+<!--导航-->
+    <div th:replace="indexnav::nav"></div>
+
+<!--顶部背景图片-->
+<div class="m-bg-type_outer" style="width: 100%;height: 40%">
+    <img src="../static/images/messagebg1.jpg" th:src="@{/images/messagebg1.jpg}" alt="" class="ui m-bg image" style="width: 100%;height: 100%">
+    <div class="m-bg-class_cover">
+        <div class="ui container" style="position: relative ;bottom: -540px;">
+            <div class="m-font-size-title" align="center" style="font-family:'STXingkai'">关于我</div>
+            <div class="m-font-size-text-init-title m-margin-top" align="center">做自己，不太好也没关系</div>
+        </div>
+    </div>
+</div>
+
+<!--个人资料描述-->
+<div class="ui container m-opacity box-shadow-max">
+    <div class="ui segment m-margin-" align="center" style="font-weight: 600;font-size: large;background: none">
+        <div class="m-margin-top-large" align="center">
+            <img class="ui circular image" align="center" src="../static/images/me.jpg" th:src="@{/images/me.jpg}" style="width: 150px;height: 150px;">
+        </div>
+    <div class="m-margin-top-small" style="font-size: x-large;font-family: STSong" align="center">GJINGLIN</div>
+
+    <div class="m-margin-top" align="center" id="waypoint">
+        <a href="#" class="ui tencent circular icon button"><i class="user icon"></i></a>
+        <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+        <a href="#" class="ui qq circular icon button" data-content="316392836" data-position="bottom center"><i class="qq icon"></i></a>
+        <a href="https://github.com/xzp-yyn" target="_blank" class="ui github circular icon button" data-content="点击跳转GitHub" data-position="bottom center"><i class="github icon"></i></a>
+        <a href="https://gitee.com/xue-zhanpeng/dashboard/projects" target="_blank" class="ui csdn circular icon button" data-content="点击跳转Gitee" data-position="bottom center"><i class="copyright outline icon"></i></a>
+        <a href="#" class="ui email circular icon button" data-content="3210625646@qq.com" data-position="bottom center"><i class="envelope  icon"></i></a>
+    </div>
+
+    <div class="ui tencent-qr flowing popup transition hidden">
+        <img src="../static/images/questionqq.jpg" th:src="@{/images/questionqq.jpg}" alt="" class="ui rounded image" style="width: 110px">
+        <div align="center">QQ群</div>
+    </div>
+    <div class="ui wechat-qr flowing popup transition hidden">
+        <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded image" style="width: 110px">
+        <div align="center">微信</div>
+    </div>
+    <div class="ui qq-qr flowing popup transition hidden">
+        <img src="../static/images/qq.jpg" th:src="@{/images/qq.jpg}" alt="" class="ui rounded image" style="width: 110px">
+        <div align="center">QQ</div>
+    </div>
+        <hr class="m-margin-top-small" style="width: 30%">
+        <br>
+        <div>
+            <p>“今日营业~欢迎光临~”</p>
+            <p>“这里的一切都有始有终，却能容纳所有不期而遇和久别重逢。”</p>
+            <p>“我是GJINGLIN”</p>
+            <br>
+            <p>生于千禧年</p>
+            <p>爱编程、爱宅家，爱生活</p>
+            <p>“路是崎岖的“</p>
+            <p>”可灯永远亮着”</p>
+            <p>少年一贯快马杨帆</p>
+            <p>道阻且长且不转弯</p>
+            <p>要盛大，要绚烂，要哗然！</p>
+            <p>要用理想的泰坦尼克号去撞现实的冰川</p>
+            <p>“要当烧赤壁的风而非借箭的草船”</p>
+            <p>”要为一片海就肯翻越万山“</p>
+        </div>
+        <hr class="m-margin-top-large">
+        <br>
+        <h2 class="m-margin-tb-tiny" style="font-size: xx-large;font-weight: bold;color: #F08047;font-family: STSong">打赏本站</h2>
+            <div class="ui orange basic label m-margin-tb-tiny">
+            <p style="font-size: medium">我们前途坦荡&nbsp;&nbsp;我们来日方长</p>
+            </div>
+            <div class="ui orange basic label" style="display: block">
+                <div class="ui images" style="font-size: inherit !important;">
+                    <div class="image">
+                        <img src="../static/images/zhifupay.jpg" th:src="@{/images/zhifupay.jpg}" alt="" class="ui rounded bordered image" style="width: 180px">
+                        <div>支付宝</div>
+                    </div>
+                    <div class="image">
+                        <img src="../static/images/wechatpay.jpg" th:src="@{/images/wechatpay.jpg}" alt="" class="ui rounded bordered image" style="width: 180px">
+                        <div>微信</div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+  <br>
+  <br>
+
+  <!--底部栏-->
+    <div th:insert="footer::foot"></div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <th:block th:replace="footer::runtime" />
+  <script>
+    $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    // 显示公众号
+    $('.tencent').popup({
+        popup : $('.tencent-qr'),
+        position: 'bottom center'
+    });
+
+    // 显示微信
+    $('.wechat').popup({
+        popup : $('.wechat-qr'),
+        position: 'bottom center'
+    });
+
+    // 显示QQ
+    $('.qq').popup({
+        popup : $('.qq-qr'),
+        position: 'bottom center'
+    });
+
+    // 显示邮箱
+    $('.email').popup();
+
+    // 显示CSDN
+    $('.csdn').popup();
+
+      // 显示github
+      $('.github').popup();
+  </script>
+</body>
+</html>

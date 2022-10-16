@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xzp.dao.CommentDao">
+    <resultMap id="comment" type="com.xzp.entity.Comment">
+        <id column="id" property="id"></id>
+        <result column="nickname" property="nickname"></result>
+        <result column="email" property="email"></result>
+        <result column="content" property="content"></result>
+        <result column="avatar" property="avatar"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="blog_id" property="blogId"></result>
+        <result column="parent_comment_id" property="parentCommentId"></result>
+        <result column="admin_comment" property="adminComment"></result>
+    </resultMap>
+
+    <select id="findParentComment" resultMap="comment">
+     select * from t_comment c where c.blog_id = #{blogid} and c.parent_comment_id = #{parentid}
+        order by c.create_time desc
+    </select>
+    <select id="findFirstComment" resultMap="comment">
+        select * from t_comment c where c.blog_id = #{blogid} and c.parent_comment_id = #{id}
+        order by c.create_time desc
+    </select>
+    <select id="findChildComment"  resultMap="comment">
+        select * from t_comment c where c.blog_id = #{blogid} and c.parent_comment_id = #{childid}
+        order by c.create_time desc
+    </select>
+    <insert id="addComment" parameterType="com.xzp.entity.Comment" useGeneratedKeys="true" keyProperty="id">
+        insert into t_comment(nickname,email,content,avatar,create_time,blog_id,parent_comment_id,admin_comment) values(#{nickname},#{email},#{content},#{avatar},#{createTime},#{blogId},#{parentCommentId},#{adminComment})
+    </insert>
+    <delete id="deleteComment" parameterType="long">
+        delete from t_comment where id=#{id}
+    </delete>
+
+    <select id="getCommentByid" parameterType="long" resultMap="comment">
+        select * from t_comment where id=#{id}
+    </select>
+</mapper>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GJINGLIN-友链</title>
+    <link href="../static/images/me.jpg" th:href="@{/images/me.jpg}" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../static/lib/layui/layui.css" th:href="@{/lib/layui/layui.css}">
+</head>
+<body>
+
+<!--导航-->
+    <div th:replace="indexnav::nav"></div>
+<!--顶部图片-->
+<div class="m-bg-type_outer" style="width: 100%;height: 40%">
+    <img src="../static/images/friendsbg.jpg" th:src="@{/images/friendsbg.jpg}" alt="" class="ui m-bg image" style="width: 100%;height: 100%">
+    <div class="m-bg-class_cover">
+        <div align="center">
+        <div class="ui container" align="center" style="position: relative ;bottom: -540px;" >
+            <div class="m-font-size-title " align="center" style="font-family:'STXingkai'">友人帐</div>
+            <div class="m-font-size-text-init-title m-margin-top" align="center">人生若只如初见，何事秋风悲画扇</div>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<!--中间内容-->
+<div  class="m-margin- animated fadeIn">
+    <div class="ui m-opacity container">
+        <div class="box-shadow-max">
+                <div class="layui-carousel" id="test1">
+                    <div carousel-item="">
+                        <div style="" th:each="link:${links}" ><img style="width: 100%;height: 100%;object-fit: contain" th:src="${link.pictureaddress}"/></div>
+                    </div>
+                </div>
+        </div>
+        <!--友人帐区域-->
+        <div class="box-shadow-max">
+        <div class="ui top attached teal m-opacity segment box-shadow-max">
+            <div class="ui m-padded-tb-large m-container-tiny">
+                <div class="ui stackable m-container-mini m-opacity grid">
+
+                    <!--友人帐显示区域-->
+                    <div class="m-margin-tb-tiny four wide column" th:each="link:${links}">
+                        <a href="#" class="class_outer" target="_blank" th:href="${link.blogaddress}">
+                            <div align="center">
+                                <div class="friends-link">
+                                    <img src="../static/images/me.jpg"  th:src="@{${link.pictureaddress}}" alt="" class="friends-link-image">
+                                    <div class="m-margin-top">
+                                     <h4 class="m-font-size-text-friends m-margin-tb-tiny" th:text="${link.blogname}"></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<!--底部栏-->
+    <div th:insert="footer::foot"></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<script src="/lib/layui/layui.js"></script>
+    <th:block th:replace="footer::runtime" />
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    layui.use('carousel',function () {
+        var carousel=layui.carousel;
+        carousel.render({
+            elem:'#test1',
+            width: '100%',
+            arrow: 'always',
+            indicator: 'outside'
+        });
+    });
+</script>
+</body>
+</html>

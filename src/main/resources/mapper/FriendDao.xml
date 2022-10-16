@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xzp.dao.FriendLinkDao">
+    <select id="listFriendLink" resultType="com.xzp.entity.FriendLink">
+        select id,blogaddress,blogname,create_time as createTime,pictureaddress from t_friend order by t_friend.create_time desc
+    </select>
+    <insert id="saveFriendLink" parameterType="com.xzp.entity.FriendLink" keyProperty="id" useGeneratedKeys="true">
+        insert into t_friend(blogaddress,blogname,create_time,pictureaddress) values(#{blogaddress},#{blogname},#{createTime},#{pictureaddress})
+    </insert>
+    <select id="getFriendLinkByBlogaddress" resultType="com.xzp.entity.FriendLink" parameterType="string">
+        select * from t_friend where blogaddress = #{blogaddress}
+    </select>
+    <select id="getFriendLink" resultType="com.xzp.entity.FriendLink" parameterType="long">
+        select * from t_friend where id = #{id}
+    </select>
+    <update id="updateFriendLink" parameterType="com.xzp.entity.FriendLink">
+        update t_friend set  blogname = #{blogname}, blogaddress = #{blogaddress}, pictureaddress = #{pictureaddress} where id = #{id};
+    </update>
+    <delete id="deleteFriendLink" parameterType="long">
+        delete from t_friend where id=#{id}
+    </delete>
+</mapper>
