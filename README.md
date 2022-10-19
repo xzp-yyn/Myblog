@@ -1,30 +1,40 @@
 # Myblog
 
 #### 介绍
-我的博客
+我的博客GJINGLIN
 
 #### 软件架构
-博客使用到的技术架构：springboot,mysql,maven,mybatis框架前端：thymeleaf
+springboot
+mysql
+maven
+mybatis
+thymeleaf
+git
 
-#### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 前端页面展示
 
-#### 使用说明
+![image-20221019102442085](https://gitee.com/xue-zhanpeng/myblog/blob/master/picture/image-20221019102442085.png)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![image-20221019102507355](https://gitee.com/xue-zhanpeng/myblog/blob/master/picture/image-20221019102507355.png)
 
-#### 参与贡献
+![image-20221019102532586](https://gitee.com/xue-zhanpeng/myblog/blob/master/picture/image-20221019102532586.png)
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+![image-20221019102547189](https://gitee.com/xue-zhanpeng/myblog/blob/master/picture/image-20221019102547189.png)
 
+![image-20221019102601571](https://gitee.com/xue-zhanpeng/myblog/blob/master/picture/image-20221019102601571.png)
+
+
+
+![image-20221019102631405](https://gitee.com/xue-zhanpeng/myblog/blob/master/picture/image-20221019102631405.png)
+
+![image-20221019102706809](https://gitee.com/xue-zhanpeng/myblog/blob/master/picture/image-20221019102706809.png)
+
+
+
+![image-20221019102720904](https://gitee.com/xue-zhanpeng/myblog/blob/master/picture/image-20221019102720904.png)
+
+后端管理页面就先不展示了哈哈！
 
 #### 特技
 
