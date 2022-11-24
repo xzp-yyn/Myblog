@@ -4,12 +4,12 @@
 我的博客GJINGLIN
 
 #### 软件架构
-springboot
-mysql
-maven
-mybatis
-thymeleaf
-git
+##### springboot
+##### mysql
+##### maven
+##### mybatis
+##### thymeleaf
+##### git
 
 
 #### 前端页面展示
