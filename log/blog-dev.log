@@ -1,31 +1,1225 @@
-2022-10-19 10:23:57.300  INFO 20584 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 20584 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
-2022-10-19 10:23:57.306 DEBUG 20584 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
-2022-10-19 10:23:57.307  INFO 20584 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
-2022-10-19 10:23:57.359  INFO 20584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-10-19 10:23:57.359  INFO 20584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-10-19 10:23:57.989  WARN 20584 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
-2022-10-19 10:23:57.989  WARN 20584 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
-2022-10-19 10:23:57.989  WARN 20584 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
-2022-10-19 10:23:57.989  WARN 20584 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
-2022-10-19 10:23:57.989  WARN 20584 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
-2022-10-19 10:23:57.989  WARN 20584 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
-2022-10-19 10:23:57.990  WARN 20584 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
-2022-10-19 10:23:58.414  INFO 20584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2022-10-19 10:23:58.427  INFO 20584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-10-19 10:23:58.427  INFO 20584 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2022-10-19 10:23:58.434  INFO 20584 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\xuniji1\linux\bin\;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;.]
-2022-10-19 10:23:58.507  INFO 20584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-10-19 10:23:58.507  INFO 20584 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1148 ms
-2022-10-19 10:23:58.545  INFO 20584 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2022-10-19 10:23:58.547  INFO 20584 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
-2022-10-19 10:23:58.550  INFO 20584 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2022-10-19 10:23:58.551  INFO 20584 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
-2022-10-19 10:23:58.644  INFO 20584 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-2022-10-19 10:23:58.758  INFO 20584 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-2022-10-19 10:23:59.347  INFO 20584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-10-19 10:23:59.391  INFO 20584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2022-10-19 10:23:59.394  INFO 20584 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.563 seconds (JVM running for 3.736)
-2022-10-19 10:24:16.182  INFO 20584 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-10-19 10:24:16.183  INFO 20584 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-10-19 10:24:16.191  INFO 20584 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2022-10-19 10:24:16.393  WARN 20584 --- [http-nio-8081-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [181] milliseconds.
+2023-03-02 19:34:21.133  INFO 4036 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 4036 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 19:34:21.144 DEBUG 4036 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 19:34:21.146  INFO 4036 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 19:34:21.279  INFO 4036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 19:34:21.280  INFO 4036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 19:34:22.122  WARN 4036 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:34:22.122  WARN 4036 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:34:22.122  WARN 4036 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:34:22.123  WARN 4036 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:34:22.123  WARN 4036 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:34:22.123  WARN 4036 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:34:22.123  WARN 4036 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 19:34:22.595  INFO 4036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 19:34:22.608  INFO 4036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 19:34:22.608  INFO 4036 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 19:34:22.614  INFO 4036 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 19:34:22.681  INFO 4036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 19:34:22.681  INFO 4036 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1400 ms
+2023-03-02 19:34:22.706  INFO 4036 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 19:34:22.707  INFO 4036 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 19:34:22.710  INFO 4036 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 19:34:22.710  INFO 4036 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 19:34:22.788  INFO 4036 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 19:34:22.902  INFO 4036 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 19:34:23.477  INFO 4036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 19:34:23.519  INFO 4036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 19:34:23.522  INFO 4036 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.943 seconds (JVM running for 3.95)
+2023-03-02 19:34:37.257  INFO 4036 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 19:34:37.258  INFO 4036 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 19:34:37.267  INFO 4036 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-03-02 19:34:37.397  WARN 4036 --- [http-nio-9000-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [109] milliseconds.
+2023-03-02 19:45:36.083  INFO 21300 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 21300 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 19:45:36.085 DEBUG 21300 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 19:45:36.086  INFO 21300 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 19:45:36.142  INFO 21300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 19:45:36.142  INFO 21300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 19:45:36.915  WARN 21300 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:45:36.915  WARN 21300 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:45:36.915  WARN 21300 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:45:36.916  WARN 21300 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:45:36.916  WARN 21300 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:45:36.916  WARN 21300 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:45:36.916  WARN 21300 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 19:45:37.316  INFO 21300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 19:45:37.328  INFO 21300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 19:45:37.329  INFO 21300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 19:45:37.333  INFO 21300 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 19:45:37.393  INFO 21300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 19:45:37.393  INFO 21300 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1250 ms
+2023-03-02 19:45:37.416  INFO 21300 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 19:45:37.417  INFO 21300 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 19:45:37.419  INFO 21300 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 19:45:37.420  INFO 21300 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 19:45:37.486  INFO 21300 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 19:45:37.586  INFO 21300 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 19:45:38.458  INFO 21300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 19:45:38.501  INFO 21300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 19:45:38.504  INFO 21300 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.846 seconds (JVM running for 3.63)
+2023-03-02 19:45:55.047  INFO 21300 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 19:45:55.048  INFO 21300 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 19:45:55.054  INFO 21300 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-03-02 19:45:58.498  WARN 21300 --- [http-nio-9000-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [146] milliseconds.
+2023-03-02 19:57:17.896  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 15544 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 19:57:17.900 DEBUG 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 19:57:17.901  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 19:57:17.977  INFO 15544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 19:57:17.978  INFO 15544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 19:57:18.602  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:57:18.602  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:57:18.602  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:57:18.603  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:57:18.603  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:57:18.603  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:57:18.603  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 19:57:19.029  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 19:57:19.041  INFO 15544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 19:57:19.041  INFO 15544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 19:57:19.046  INFO 15544 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 19:57:19.114  INFO 15544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 19:57:19.115  INFO 15544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1137 ms
+2023-03-02 19:57:19.136  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 19:57:19.137  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 19:57:19.139  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 19:57:19.140  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 19:57:19.203  INFO 15544 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 19:57:19.291  INFO 15544 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 19:57:19.777  INFO 15544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 19:57:19.817  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 19:57:19.820  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.571 seconds (JVM running for 3.838)
+2023-03-02 19:57:28.267  INFO 15544 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 19:57:28.268  INFO 15544 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 19:57:28.274  INFO 15544 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-03-02 19:57:28.408  WARN 15544 --- [http-nio-9000-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [118] milliseconds.
+2023-03-02 19:59:51.209  INFO 15544 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-03-02 19:59:51.225  INFO 15544 --- [Thread-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-03-02 19:59:51.728  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 15544 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 19:59:51.729 DEBUG 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 19:59:51.729  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 19:59:52.440  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:52.441  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:52.441  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:52.442  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:52.442  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:52.442  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:52.442  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 19:59:52.545  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 19:59:52.547  INFO 15544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 19:59:52.547  INFO 15544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 19:59:52.577  INFO 15544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 19:59:52.578  INFO 15544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 843 ms
+2023-03-02 19:59:52.594  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 19:59:52.594  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 19:59:52.595  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 19:59:52.595  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 19:59:52.627  INFO 15544 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 19:59:52.689  INFO 15544 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2023-03-02 19:59:53.186  INFO 15544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 19:59:53.224  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 19:59:53.225  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 1.586 seconds (JVM running for 157.243)
+2023-03-02 19:59:53.229  INFO 15544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-03-02 19:59:54.096  INFO 15544 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 19:59:54.098  INFO 15544 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 19:59:54.104  INFO 15544 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-03-02 19:59:55.973  INFO 15544 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2023-03-02 19:59:55.973  INFO 15544 --- [Thread-9] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2023-03-02 19:59:56.289  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 15544 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 19:59:56.289 DEBUG 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 19:59:56.289  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 19:59:56.676  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:56.676  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:56.676  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:56.676  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:56.676  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:56.676  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 19:59:56.677  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 19:59:56.761  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 19:59:56.762  INFO 15544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 19:59:56.763  INFO 15544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 19:59:56.787  INFO 15544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 19:59:56.788  INFO 15544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 496 ms
+2023-03-02 19:59:56.800  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 19:59:56.800  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 19:59:56.800  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 19:59:56.800  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 19:59:56.826  INFO 15544 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 19:59:56.857  INFO 15544 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2023-03-02 19:59:57.174  INFO 15544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 19:59:57.190  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 19:59:57.191  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 0.939 seconds (JVM running for 161.208)
+2023-03-02 19:59:57.192  INFO 15544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-03-02 20:00:11.190  INFO 15544 --- [http-nio-9000-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 20:00:11.191  INFO 15544 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 20:00:11.193  INFO 15544 --- [http-nio-9000-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-02 20:04:55.664  INFO 15544 --- [Thread-15] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2023-03-02 20:04:55.666  INFO 15544 --- [Thread-15] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2023-03-02 20:05:07.693  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 15544 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:05:07.694 DEBUG 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:05:07.694  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:05:08.183  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp]' package. Please check your configuration.
+2023-03-02 20:05:08.202  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:05:08.262  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:05:08.263  INFO 15544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:05:08.263  INFO 15544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:05:08.293  INFO 15544 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:05:08.294  INFO 15544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 597 ms
+2023-03-02 20:05:08.320  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:05:08.321  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:05:08.322  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:05:08.322  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2023-03-02 20:05:08.322  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2023-03-02 20:05:08.322  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2023-03-02 20:05:08.322  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:05:08.423  INFO 15544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-02 20:05:08.471  INFO 15544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-03-02 20:05:08.473  INFO 15544 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:05:08.503  INFO 15544 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+2023-03-02 20:05:08.546  WARN 15544 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xzp.query.BlogQuery'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xzp.query.BlogQuery
+2023-03-02 20:05:08.546  INFO 15544 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closing ...
+2023-03-02 20:05:08.546  INFO 15544 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+2023-03-02 20:05:08.547  INFO 15544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-02 20:05:08.547  INFO 15544 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-03-02 20:05:08.556  INFO 15544 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-02 20:05:08.560 ERROR 15544 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xzp.query.BlogQuery'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xzp.query.BlogQuery
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:625)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.xzp.BlogSpringbootApplication.main(BlogSpringbootApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xzp.query.BlogQuery'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xzp.query.BlogQuery
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:620)
+	... 24 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xzp.query.BlogQuery'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xzp.query.BlogQuery
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:595)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475)
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:615)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:150)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$397db862.CGLIB$sqlSessionFactory$1(<generated>)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$397db862$$FastClassBySpringCGLIB$$ab9375f3.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$397db862.sqlSessionFactory(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 25 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\blog-springboot\target\classes\mapper\BlogDao.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xzp.query.BlogQuery'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xzp.query.BlogQuery
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:593)
+	... 38 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xzp.query.BlogQuery'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xzp.query.BlogQuery
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:262)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:253)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:245)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 40 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.xzp.query.BlogQuery'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.xzp.query.BlogQuery
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 44 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.xzp.query.BlogQuery
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 46 common frames omitted
+
+2023-03-02 20:05:11.483  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 15544 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:05:11.483 DEBUG 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:05:11.483  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:05:11.891  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:05:11.892  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:05:11.892  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:05:11.892  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:05:11.892  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:05:11.892  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:05:11.892  WARN 15544 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:05:11.973  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:05:11.974  INFO 15544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:05:11.974  INFO 15544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:05:11.994  INFO 15544 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:05:11.995  INFO 15544 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 509 ms
+2023-03-02 20:05:12.010  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:05:12.011  INFO 15544 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:05:12.011  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:05:12.011  INFO 15544 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:05:12.048  INFO 15544 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:05:12.088  INFO 15544 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+2023-03-02 20:05:12.434  INFO 15544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 20:05:12.451  INFO 15544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 20:05:12.452  INFO 15544 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 1.002 seconds (JVM running for 476.47)
+2023-03-02 20:05:12.453  INFO 15544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-03-02 20:05:30.722  INFO 15544 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 20:05:30.722  INFO 15544 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 20:05:30.725  INFO 15544 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-02 20:10:48.447  INFO 21476 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 21476 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:10:48.450 DEBUG 21476 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:10:48.452  INFO 21476 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:10:48.514  INFO 21476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 20:10:48.515  INFO 21476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 20:10:50.044  WARN 21476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:10:50.045  WARN 21476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:10:50.045  WARN 21476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:10:50.045  WARN 21476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:10:50.045  WARN 21476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:10:50.045  WARN 21476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:10:50.045  WARN 21476 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:10:50.725  INFO 21476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:10:50.746  INFO 21476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:10:50.747  INFO 21476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:10:50.756  INFO 21476 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 20:10:50.833  INFO 21476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:10:50.834  INFO 21476 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2319 ms
+2023-03-02 20:10:50.855  INFO 21476 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:10:50.856  INFO 21476 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:10:50.859  INFO 21476 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:10:50.859  INFO 21476 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:10:50.968  INFO 21476 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:10:51.086  INFO 21476 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 20:10:51.730  INFO 21476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 20:10:51.817  INFO 21476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 20:10:51.822  INFO 21476 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 3.925 seconds (JVM running for 5.773)
+2023-03-02 20:11:06.431  INFO 12380 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 12380 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:11:06.434 DEBUG 12380 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:11:06.435  INFO 12380 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:11:06.490  INFO 12380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 20:11:06.490  INFO 12380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 20:11:07.217  WARN 12380 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:11:07.218  WARN 12380 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:11:07.218  WARN 12380 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:11:07.218  WARN 12380 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:11:07.218  WARN 12380 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:11:07.218  WARN 12380 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:11:07.218  WARN 12380 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:11:07.735  INFO 12380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:11:07.757  INFO 12380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:11:07.758  INFO 12380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:11:07.768  INFO 12380 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 20:11:07.920  INFO 12380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:11:07.920  INFO 12380 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1430 ms
+2023-03-02 20:11:07.974  INFO 12380 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:11:07.977  INFO 12380 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:11:07.984  INFO 12380 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:11:07.985  INFO 12380 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:11:08.137  INFO 12380 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:11:08.251  INFO 12380 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 20:11:09.018  INFO 12380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 20:11:09.118  INFO 12380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 20:11:09.126  INFO 12380 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 3.246 seconds (JVM running for 4.633)
+2023-03-02 20:11:15.804  INFO 12380 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 20:11:15.805  INFO 12380 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 20:11:15.811  INFO 12380 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-03-02 20:11:15.984  WARN 12380 --- [http-nio-9000-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [151] milliseconds.
+2023-03-02 20:12:06.850 ERROR 12380 --- [http-nio-9000-exec-10] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9000-exec-10] Exception processing template "picture": An error happened during template parsing (template: "class path resource [templates/picture.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/picture.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "#strings.substring(picture.pictureaddress,44,picture.pictureaddress.length())" (template: "picture" - line 36, col 48)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 43 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#strings.substring(picture.pictureaddress,44,picture.pictureaddress.length())" (template: "picture" - line 36, col 48)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 45 common frames omitted
+Caused by: java.lang.StringIndexOutOfBoundsException: begin 44, end 14, length 14
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at org.thymeleaf.util.StringUtils.substring(StringUtils.java:188)
+	at org.thymeleaf.expression.Strings.substring(Strings.java:392)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:130)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:138)
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:54)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:390)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:90)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:328)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 74 common frames omitted
+
+2023-03-02 20:12:06.852 ERROR 12380 --- [http-nio-9000-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/picture.html]")] with root cause
+
+java.lang.StringIndexOutOfBoundsException: begin 44, end 14, length 14
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at org.thymeleaf.util.StringUtils.substring(StringUtils.java:188)
+	at org.thymeleaf.expression.Strings.substring(Strings.java:392)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:130)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:138)
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:54)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:390)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:90)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:328)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023-03-02 20:12:15.460 ERROR 12380 --- [http-nio-9000-exec-8] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9000-exec-8] Exception processing template "picture": An error happened during template parsing (template: "class path resource [templates/picture.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/picture.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "#strings.substring(picture.pictureaddress,44,picture.pictureaddress.length())" (template: "picture" - line 36, col 48)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 43 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#strings.substring(picture.pictureaddress,44,picture.pictureaddress.length())" (template: "picture" - line 36, col 48)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 45 common frames omitted
+Caused by: java.lang.StringIndexOutOfBoundsException: begin 44, end 14, length 14
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at org.thymeleaf.util.StringUtils.substring(StringUtils.java:188)
+	at org.thymeleaf.expression.Strings.substring(Strings.java:392)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:130)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:111)
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:54)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:390)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:90)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:328)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	... 74 common frames omitted
+
+2023-03-02 20:12:15.461 ERROR 12380 --- [http-nio-9000-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/picture.html]")] with root cause
+
+java.lang.StringIndexOutOfBoundsException: begin 44, end 14, length 14
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at org.thymeleaf.util.StringUtils.substring(StringUtils.java:188)
+	at org.thymeleaf.expression.Strings.substring(Strings.java:392)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.expression.spel.support.ReflectiveMethodExecutor.execute(ReflectiveMethodExecutor.java:130)
+	at org.springframework.expression.spel.ast.MethodReference.getValueInternal(MethodReference.java:111)
+	at org.springframework.expression.spel.ast.MethodReference.access$000(MethodReference.java:54)
+	at org.springframework.expression.spel.ast.MethodReference$MethodValueRef.getValue(MethodReference.java:390)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:90)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:328)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023-03-02 20:16:07.508  INFO 21256 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 21256 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:16:07.511 DEBUG 21256 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:16:07.512  INFO 21256 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:16:07.577  INFO 21256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 20:16:07.577  INFO 21256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 20:16:08.588  WARN 21256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:16:08.588  WARN 21256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:16:08.588  WARN 21256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:16:08.588  WARN 21256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:16:08.588  WARN 21256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:16:08.588  WARN 21256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:16:08.588  WARN 21256 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:16:08.983  INFO 21256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:16:08.995  INFO 21256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:16:08.995  INFO 21256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:16:09.001  INFO 21256 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 20:16:09.062  INFO 21256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:16:09.063  INFO 21256 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1485 ms
+2023-03-02 20:16:09.084  INFO 21256 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:16:09.085  INFO 21256 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:16:09.088  INFO 21256 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:16:09.089  INFO 21256 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:16:09.190  INFO 21256 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:16:09.291  INFO 21256 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 20:16:09.864  INFO 21256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 20:16:09.905  INFO 21256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 20:16:09.908  INFO 21256 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.841 seconds (JVM running for 4.27)
+2023-03-02 20:17:19.718  INFO 4060 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 4060 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:17:19.721 DEBUG 4060 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:17:19.723  INFO 4060 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:17:19.782  INFO 4060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 20:17:19.782  INFO 4060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 20:17:20.410  WARN 4060 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:17:20.410  WARN 4060 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:17:20.410  WARN 4060 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:17:20.410  WARN 4060 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:17:20.410  WARN 4060 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:17:20.411  WARN 4060 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:17:20.411  WARN 4060 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:17:20.767  INFO 4060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:17:20.779  INFO 4060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:17:20.779  INFO 4060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:17:20.785  INFO 4060 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 20:17:20.856  INFO 4060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:17:20.856  INFO 4060 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1073 ms
+2023-03-02 20:17:20.880  INFO 4060 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:17:20.881  INFO 4060 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:17:20.884  INFO 4060 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:17:20.884  INFO 4060 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:17:20.957  INFO 4060 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:17:21.047  INFO 4060 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 20:17:21.564  INFO 4060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 20:17:21.605  INFO 4060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 20:17:21.608  INFO 4060 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.317 seconds (JVM running for 3.336)
+2023-03-02 20:17:27.301  INFO 4060 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 20:17:27.302  INFO 4060 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 20:17:27.307  INFO 4060 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-03-02 20:17:30.583 ERROR 4060 --- [http-nio-9000-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9000-exec-6] Exception processing template "picture": An error happened during template parsing (template: "class path resource [templates/picture.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/picture.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "@{picture.pictureaddress}}" (template: "picture" - line 37, col 77)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 43 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{picture.pictureaddress}}" (template: "picture" - line 37, col 77)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 45 common frames omitted
+
+2023-03-02 20:17:30.584 ERROR 4060 --- [http-nio-9000-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/picture.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{picture.pictureaddress}}" (template: "picture" - line 37, col 77)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023-03-02 20:17:36.414 ERROR 4060 --- [http-nio-9000-exec-7] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9000-exec-7] Exception processing template "picture": An error happened during template parsing (template: "class path resource [templates/picture.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/picture.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.attoparser.ParseException: Could not parse as expression: "@{picture.pictureaddress}}" (template: "picture" - line 37, col 77)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 43 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{picture.pictureaddress}}" (template: "picture" - line 37, col 77)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 45 common frames omitted
+
+2023-03-02 20:17:36.415 ERROR 4060 --- [http-nio-9000-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/picture.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{picture.pictureaddress}}" (template: "picture" - line 37, col 77)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleStandaloneElement(ProcessorTemplateHandler.java:918)
+	at org.thymeleaf.engine.StandaloneElementTag.beHandled(StandaloneElementTag.java:228)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1370)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1116)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1055)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2023-03-02 20:18:27.441  INFO 17900 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 17900 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:18:27.445 DEBUG 17900 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:18:27.446  INFO 17900 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:18:27.500  INFO 17900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 20:18:27.500  INFO 17900 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 20:18:28.189  WARN 17900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:18:28.189  WARN 17900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:18:28.189  WARN 17900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:18:28.189  WARN 17900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:18:28.189  WARN 17900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:18:28.190  WARN 17900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:18:28.190  WARN 17900 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:18:28.577  INFO 17900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:18:28.589  INFO 17900 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:18:28.589  INFO 17900 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:18:28.594  INFO 17900 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 20:18:28.657  INFO 17900 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:18:28.657  INFO 17900 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1157 ms
+2023-03-02 20:18:28.681  INFO 17900 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:18:28.683  INFO 17900 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:18:28.685  INFO 17900 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:18:28.686  INFO 17900 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:18:28.750  INFO 17900 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:18:28.850  INFO 17900 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 20:18:29.428  INFO 17900 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 20:18:29.468  INFO 17900 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 20:18:29.471  INFO 17900 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.559 seconds (JVM running for 4.407)
+2023-03-02 20:18:35.329  INFO 17900 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 20:18:35.330  INFO 17900 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 20:18:35.336  INFO 17900 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2023-03-02 20:20:08.311  INFO 20976 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 20976 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:20:08.314 DEBUG 20976 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:20:08.315  INFO 20976 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:20:08.363  INFO 20976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 20:20:08.363  INFO 20976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 20:20:09.013  WARN 20976 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:20:09.013  WARN 20976 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:20:09.014  WARN 20976 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:20:09.014  WARN 20976 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:20:09.014  WARN 20976 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:20:09.014  WARN 20976 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:20:09.014  WARN 20976 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:20:09.430  INFO 20976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:20:09.442  INFO 20976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:20:09.443  INFO 20976 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:20:09.448  INFO 20976 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 20:20:09.508  INFO 20976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:20:09.509  INFO 20976 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1145 ms
+2023-03-02 20:20:09.532  INFO 20976 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:20:09.533  INFO 20976 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:20:09.535  INFO 20976 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:20:09.535  INFO 20976 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:20:09.619  INFO 20976 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:20:09.815  INFO 20976 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 20:20:10.436  INFO 20976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 20:20:10.475  INFO 20976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 20:20:10.478  INFO 20976 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.645 seconds (JVM running for 3.84)
+2023-03-02 20:20:15.527  INFO 20976 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 20:20:15.528  INFO 20976 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 20:20:15.533  INFO 20976 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2023-03-02 20:21:57.391  INFO 13316 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 13316 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:21:57.395 DEBUG 13316 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:21:57.396  INFO 13316 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:21:57.501  INFO 13316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 20:21:57.502  INFO 13316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 20:21:58.169  WARN 13316 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:21:58.169  WARN 13316 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:21:58.169  WARN 13316 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:21:58.169  WARN 13316 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:21:58.169  WARN 13316 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:21:58.169  WARN 13316 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:21:58.170  WARN 13316 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:21:58.582  INFO 13316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:21:58.595  INFO 13316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:21:58.595  INFO 13316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:21:58.602  INFO 13316 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 20:21:58.671  INFO 13316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:21:58.671  INFO 13316 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1169 ms
+2023-03-02 20:21:58.695  INFO 13316 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:21:58.696  INFO 13316 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:21:58.699  INFO 13316 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:21:58.699  INFO 13316 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:21:58.796  INFO 13316 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:21:58.885  INFO 13316 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 20:21:59.395  INFO 13316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 20:21:59.433  INFO 13316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 20:21:59.436  INFO 13316 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.555 seconds (JVM running for 3.949)
+2023-03-02 20:22:14.031  INFO 13316 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 20:22:14.033  INFO 13316 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 20:22:14.040  INFO 13316 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2023-03-02 20:25:45.703  INFO 11000 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Starting BlogSpringbootApplication on xiaoxin-xzp with PID 11000 (D:\blog-springboot\target\classes started by xuezhanpeng in D:\blog-springboot)
+2023-03-02 20:25:45.706 DEBUG 11000 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2023-03-02 20:25:45.707  INFO 11000 --- [restartedMain] com.xzp.BlogSpringbootApplication        : The following profiles are active: dev
+2023-03-02 20:25:45.773  INFO 11000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 20:25:45.773  INFO 11000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 20:25:46.421  WARN 11000 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'blogDao' and 'com.xzp.dao.BlogDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:25:46.421  WARN 11000 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'commentDao' and 'com.xzp.dao.CommentDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:25:46.421  WARN 11000 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'friendLinkDao' and 'com.xzp.dao.FriendLinkDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:25:46.421  WARN 11000 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'pictureDao' and 'com.xzp.dao.PictureDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:25:46.421  WARN 11000 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'typeDao' and 'com.xzp.dao.TypeDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:25:46.421  WARN 11000 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'userDao' and 'com.xzp.dao.UserDao' mapperInterface. Bean already defined with the same name!
+2023-03-02 20:25:46.422  WARN 11000 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.xzp.dao]' package. Please check your configuration.
+2023-03-02 20:25:46.843  INFO 11000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9000 (http)
+2023-03-02 20:25:46.855  INFO 11000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-03-02 20:25:46.855  INFO 11000 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2023-03-02 20:25:46.860  INFO 11000 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11.0.6\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\apks\vmware-pro\bin\;D:\Anaconda3;D:\Anaconda3\Library\mingw-w64\bin;D:\Anaconda3\Library\usr\bin;D:\Anaconda3\Library\bin;D:\Anaconda3\Scripts;C:\Program Files\Java\jdk-11.0.6\bin;D:\python\Python软件包;D:;%;ystemRoot%\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\bin;D:\Users\runtime\win64;D:\Users\polyspace\bin;C:\Program Files (x86)\MySQL\MySQL Server 5.7\bin；;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apks\ffmpeg-4.4.1-essentials_build\bin;D:\Android SDK\tools;D:\Android SDK\build-tools\32.0.0;D:\Android SDK\platform-tools;D:\gradle-6.9.2\bin；;:\Nodejs;D:\Maven\apache-maven-3.6.3\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36;D:\PHP;C:\Program Files\MySQL\MySQL Server 5.7\bin;E:\apks\Git\cmd;E:\apks\erl9.2\bin;E:\apks\rabbitmq_server-3.7.4\sbin;E:\apks\nvmw;E:\apks\nvm;C:\Program Files\nodejs;E:\apks\Jmeter\apache-jmeter-5.4\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\xuezhanpeng\AppData\Local\Programs\Python\Python36\;D:\软件\vc\bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;d:\软件\bin;C:\Users\xuezhanpeng\AppData\Local\Microsoft\WindowsApps;D:\Microsoft VS Code\bin;D:\python\PC\PyCharm Community Edition 2020.3.2\bin;D:\IJ-Java\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Windows\System32;E:\apks\apks\AUTO\bin;C:\Users\xuezhanpeng\AppData\Roaming\npm;E:\apks\nvm;C:\Program Files\nodejs;.]
+2023-03-02 20:25:46.919  INFO 11000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-03-02 20:25:46.919  INFO 11000 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1145 ms
+2023-03-02 20:25:46.943  INFO 11000 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2023-03-02 20:25:46.944  INFO 11000 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet statViewServlet mapped to [/druid/*]
+2023-03-02 20:25:46.946  INFO 11000 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2023-03-02 20:25:46.947  INFO 11000 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2023-03-02 20:25:47.013  INFO 11000 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-03-02 20:25:47.097  INFO 11000 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-03-02 20:25:47.602  INFO 11000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-03-02 20:25:47.663  INFO 11000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9000 (http) with context path ''
+2023-03-02 20:25:47.667  INFO 11000 --- [restartedMain] com.xzp.BlogSpringbootApplication        : Started BlogSpringbootApplication in 2.41 seconds (JVM running for 3.475)
+2023-03-02 20:25:53.411  INFO 11000 --- [http-nio-9000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 20:25:53.411  INFO 11000 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-02 20:25:53.416  INFO 11000 --- [http-nio-9000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms

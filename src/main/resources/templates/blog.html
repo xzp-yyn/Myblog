@@ -211,14 +211,14 @@
 <br>
 <!--底部栏-->
   <div th:insert="footer::foot"></div>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/semantic.min.js"></script>
+<script src="../js/jquery.scrollTo.min.js"></script>
 <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
 <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
-  <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
-  <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
-<script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+  <script src="../js/showdown.js"></script>
+  <script src="../lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+<script src="../lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
   <th:block th:replace="footer::runtime" />
 <script th:inline="javascript">
   //页面一加载完毕就执行这个函数
